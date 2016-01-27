@@ -33,7 +33,7 @@ Three possible ways (there could be more) around these limitations is by:
 The problem with option 1 is that LaTeX commands only work well if the final output is LaTeX. By using option 1, we have to sacrifice the ability to go from RMarkdown to non-TeX formats.  
 Option 2 works well for non-TeX output formats, but the syntax requires some getting used to, and it hardcodes the LaTeX output.
 i.e. the .tex source file might literally say 'Figure 1' in a caption.  
-Option 3 is wonderful and has many neat features, but installation is a bit cumbersome since it requires Haskell to build everything.
+Option 3 is wonderful and has many neat features, but installation is cumbersome since it requires Haskell to build everything.
 
 Ideally, we should pick an option based on the output format, and this is where `compileRmd` comes in.
 Instead of worrying about which option to use, we can pretend that we're always using option 1 and use LaTeX commands.

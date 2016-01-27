@@ -3,10 +3,10 @@
 An R-Script for compiling RMarkdown documents with support for numbered equations, figures, tables and their cross-references. `compileRmd` exports to PDF (via LaTeX), Microsoft Word and HTML while using syntax that should be familiar to a typical LaTeX user.
 
 An example is provided in the `inst/example` folder, where:  
-The input RMarkdown file is: [example.Rmd](inst/example/example.Rmd)
-The html output is: [example.html](inst/example/example.html)
-The docx output is: [example.docx](inst/example/example.docx?raw=true)
-The pdf outpit is: [example.pdf](inst.example/example.pdf?raw=true)
+The input RMarkdown file is: [example.Rmd](inst/example/example.Rmd)  
+The html output is: [example.html](inst/example/example.html)  
+The docx output is: [example.docx](inst/example/example.docx?raw=true)  
+The pdf outpit is: [example.pdf](inst.example/example.pdf?raw=true)  
 
 ## Motivation and Purpose
 

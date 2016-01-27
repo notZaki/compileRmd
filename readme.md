@@ -2,6 +2,12 @@
 
 An R-Script for compiling RMarkdown documents with support for numbered equations, figures, tables and their cross-references. `compileRmd` exports to PDF (via LaTeX), Microsoft Word and HTML while using syntax that should be familiar to a typical LaTeX user.
 
+An example is provided in the `inst/example` folder, where:  
+The input RMarkdown file is: [example.Rmd](inst/example/example.Rmd)
+The html output is: [example.html](inst/example/example.html)
+The docx output is: [example.docx](inst/example/example.docx?raw=true)
+The pdf outpit is: [example.pdf](inst.example/example.pdf?raw=true)
+
 ## Motivation and Purpose
 
 I prefer writing documents using [RMarkdown](http://rmarkdown.rstudio.com/) which is a combination [R](http://www.r-project.org/), [knitr](http://yihui.name/knitr/), [Pandoc](http://pandoc.org/) and [Markdown](http://daringfireball.net/projects/markdown/).
@@ -114,7 +120,7 @@ Table: [Short caption for table] This is the long caption. \label{tab:yourLabel}
 Please try not use square brackets inside a caption for anything that isn't a short caption, or else the script might get angry.
 
 **Embedded Figures and Tables**  
-An alternative way of including figures and table in RMarkdown is by directly outputting it from R code chunks inside the document. Take a look at `examples/example.Rmd` for more details.
+An alternative way of including figures and table in RMarkdown is by directly outputting it from R code chunks inside the document. Take a look at `inst/example/example.Rmd` for more details.
 
 ### Usage
 

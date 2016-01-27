@@ -1,6 +1,6 @@
 # Readme
 
-To use the example, try the following in the R console:
+To use the example, you will first have to install 'compileRmd' and then enter the following in the R console:
 ```
 library(compileRmd)
 exampleDir <- system.file('example',package='compileRmd')

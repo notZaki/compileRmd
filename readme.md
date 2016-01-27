@@ -194,5 +194,5 @@ A well-defined YAML header file will allow you to compile an html document by si
 
 This wouldn't be possible without the wizardry that is [knitr](http://yihui.name/knitr/) and [Pandoc](http://pandoc.org/).  
 The code for numbering the figures/tables is from [this tutorial](https://github.com/humburg/reproducible-reports). The idea to wrap equations in a div tag for html output is also from there.  
-The CSS for the html output is based on the style sheet by user [ArcoMul](https://github.com/ArcoMul) which was obtained from [this markdown template for thesis writing](https://github.com/tompollard/phd_thesis_markdown).
+The CSS for the html output is based on the style sheet by user [ArcoMul](https://github.com/ArcoMul) which was obtained from [this markdown template for thesis writing](https://github.com/tompollard/phd_thesis_markdown).  
 The .tex output requires some cleaning, and for this task, some code was adapted from [this guide](http://linguisticmystic.com/2015/03/04/how-to-write-a-dissertation-in-latex-using-markdown/)

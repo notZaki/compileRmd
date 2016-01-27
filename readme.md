@@ -28,12 +28,10 @@ Three possible ways (there could be more) around these limitations is by:
 
 1. using LaTeX commands for labelling and cross-referencing [[1](https://github.com/chiakaivalya/thesis-markdown-pandoc), [2](https://github.com/tompollard/phd_thesis_markdown), [3](http://linguisticmystic.com/2015/03/04/how-to-write-a-dissertation-in-latex-using-markdown/)]  
 2. using R to do the counting and cross-referencing [[4](http://rmflight.github.io/posts/2012/10/papersinRmd.html), [5](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-iii/), [6](https://github.com/humburg/reproducible-reports)]
-3. using the [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref) filter
 
 The problem with option 1 is that LaTeX commands only work well if the final output is LaTeX. By using option 1, we have to sacrifice the ability to go from RMarkdown to non-TeX formats.  
 Option 2 works well for non-TeX output formats, but the syntax requires some getting used to, and it hardcodes the LaTeX output.
 i.e. the .tex source file might literally say 'Figure 1' in a caption.  
-Option 3 is wonderful and has many neat features, but installation is cumbersome since it requires Haskell to build everything.
 
 Ideally, we should pick an option based on the output format, and this is where `compileRmd` comes in.
 Instead of worrying about which option to use, we can pretend that we're always using option 1 and use LaTeX commands.

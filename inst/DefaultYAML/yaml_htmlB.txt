@@ -1,0 +1,8 @@
+---
+output:
+  knitrBootstrap::bootstrap_document:
+    theme: spacelab
+    theme.chooser: TRUE
+bibliography: [`varBib`]
+csl: `varCSL`
+---

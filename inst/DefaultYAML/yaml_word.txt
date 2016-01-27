@@ -1,0 +1,16 @@
+---
+output:
+  word_document:
+    fig_caption: yes
+bibliography: [`varBib`]
+csl: `varCSL`
+---
+
+```{r global_setup, echo=FALSE, warning=FALSE, message=FALSE}
+# Initialization
+library(Cairo)
+library(knitr)
+opts_chunk$set(dev="CairoPNG", dvi=90, fig.width=800/90, fig.height=400/90)
+opts_chunk$set(echo=FALSE)
+opts_chunk$set(warning=FALSE)
+```

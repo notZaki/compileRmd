@@ -1,0 +1,21 @@
+Package: compileRmd
+Type: Package
+Title: Compiles RMarkdown with cross-references
+Version: 0.1
+Date: 2015-05-18
+Author: Zaki
+Maintainer: Zaki <notZaki@hotmail.com>
+Description: Compiles word/html/latex documents from RMarkdown.
+  Supports automatic numbering of equations, figures and tables,
+  as well as the ability to cross-reference them.
+  Helpful for creating scientific reports.
+License: CC0
+Imports:
+  knitr,
+  rmarkdown,
+  stringr
+Suggests:
+  ggplot2,
+  Cairo,
+  pander
+LazyData: TRUE

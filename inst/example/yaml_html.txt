@@ -1,0 +1,24 @@
+---
+output:
+  html_document:
+    number_sections: no
+    self_contained: yes
+    toc: yes
+    fig_caption: yes
+    keep_md: yes
+    includes:
+      in_header: style.css
+bibliography: [bib/refsA.bib]
+csl: `varCSL`
+---
+
+```{r global_setup, echo=FALSE, warning=FALSE, message=FALSE}
+# Initialization
+library(ggplot2)
+library(pander)
+library(Cairo)
+library(knitr)
+opts_chunk$set(dev="CairoPNG", dvi=90, fig.width=900/90, fig.height=600/90)
+opts_chunk$set(echo=FALSE)
+opts_chunk$set(warning=FALSE)
+```

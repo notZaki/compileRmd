@@ -1,0 +1,16 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+bibliography: [`varBib`]
+csl: `varCSL`
+---
+
+```{r global_setup, echo=FALSE, warning=FALSE, message=FALSE}
+# Initialization
+library(knitr)
+opts_chunk$set(dev="pdf")
+opts_chunk$set(echo=FALSE)
+opts_chunk$set(warning=FALSE)
+```

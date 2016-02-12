@@ -38,7 +38,7 @@ Instead of worrying about which option to use, we can pretend that we're always 
 If we need to output to a format that is **not** LaTeX, then `compileRmd` will convert everything so that it resembles option 2's syntax instead.
 This task is carried out by a hilariously ugly script which heavily relies on regular expressions.
 
-I have been using this script for over a year for multiple writing tasks (e.g. abstracts, MSC thesis) and it seems to do the job.
+I have been using this script for over a year for multiple writing tasks (e.g. abstracts, MSc thesis) and it seems to do the job.
 Others might find this to be useful, so I've wrapped the script into an R package that should, hopefully, be easy to use.
 
 ## Installation
@@ -115,7 +115,7 @@ For a table, the caption part of the code would be be:
 ```
 Table: [Short caption for table] This is the long caption. \label{tab:yourLabel}
 ```
-Please try not use square brackets inside a caption for anything that isn't a short caption, or else the script might get angry.
+Please try to not use square brackets inside a caption for anything that isn't a short caption, or else the script might get angry.
 
 **Embedded Figures and Tables**  
 An alternative way of including figures and table in RMarkdown is by directly outputting it from R code chunks inside the document. Take a look at `inst/example/example.Rmd` for more details.

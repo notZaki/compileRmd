@@ -20,11 +20,11 @@ Some of my reasons for using RMarkdown include:
     + *HTML* - for myself (I use it for previewing), for sharing online or for interactive reports (with [RCharts](https://github.com/ramnathv/rCharts) and [Shiny](http://shiny.rstudio.com/))
 - its syntax is arguably easier to read/write compared to LaTeX
 - it produces dynamic documents - analysis can be carried by code within a document instead of copy/pasting results
-    + This also means that some elements, such as a plots and table, will change automatically if input (raw data) changes
+    + This also means that some elements, such as plots and tables, will change automatically if input (raw data) changes
 
 However, there are some features which RMarkdown currently lacks. In particular, there is no native method for automatically numbering figures and tables or for cross-referencing figures and tables.  
 
-Three possible ways (there could be more) around these limitations is by:
+Two possible ways (there could be more) around these limitations is by:
 
 1. using LaTeX commands for labelling and cross-referencing [[1](https://github.com/chiakaivalya/thesis-markdown-pandoc), [2](https://github.com/tompollard/phd_thesis_markdown), [3](http://linguisticmystic.com/2015/03/04/how-to-write-a-dissertation-in-latex-using-markdown/)]  
 2. using R to do the counting and cross-referencing [[4](http://rmflight.github.io/posts/2012/10/papersinRmd.html), [5](http://gforge.se/2014/01/fast-track-publishing-using-knitr-part-iii/), [6](https://github.com/humburg/reproducible-reports)]

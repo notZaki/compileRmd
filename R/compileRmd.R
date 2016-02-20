@@ -371,7 +371,7 @@ compileRmd <- function(file = NULL, # RMarkdown file
     return(mdFile)
   } else if (format == 'html') {
     # Render using rmarkdown
-    rmarkdown::render(mdFile)
+    rmarkdown::render(mdFile,encoding = 'UTF-8')
     htmlFile <- file.path(filePath, paste0(fileName, '.html'))
     setwd(originalWd)
     return(htmlFile)
@@ -381,7 +381,7 @@ compileRmd <- function(file = NULL, # RMarkdown file
     htmlFileTmp <- file.path(filePath, paste0(fileName, '_tmp.html'))
     htmlFile <- file.path(filePath, paste0(fileName, '.html'))
     file.copy(mdFile, rmdFileTmp)
-    rmarkdown::render(rmdFileTmp)
+    rmarkdown::render(rmdFileTmp,encoding = 'UTF-8')
     # Images don't get recognized by magnific popup? This fixes it for me.
     htmlText <- readLines(htmlFileTmp)
     htmlText <- gsub("(<img src[^<]+/>)","<a href='#' class='thumbnail'>\\1</a>", htmlText)
@@ -393,7 +393,7 @@ compileRmd <- function(file = NULL, # RMarkdown file
     return(htmlFile)
   } else if (format == 'word') {
     # Similar steps as html code above
-    rmarkdown::render(mdFile)
+    rmarkdown::render(mdFile,encoding = 'UTF-8')
     docFile <- file.path(filePath, paste0(fileName, '.docx'))
     setwd(originalWd)
     return(docFile)
@@ -401,7 +401,7 @@ compileRmd <- function(file = NULL, # RMarkdown file
     # Latex output
     pdfFile <- file.path(filePath, paste0(fileName, '.pdf'))
     # Render the markdown file to start things off
-    rmarkdown::render(mdFile)
+    rmarkdown::render(mdFile,encoding = 'UTF-8')
 
     # Now we have to process the tex file a bit
     texFile <- file.path(filePath, paste0(fileName, '.tex'))

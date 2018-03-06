@@ -221,8 +221,8 @@ compileRmd <- function(file = NULL, # RMarkdown file
   # Format-specific formatting
   if (format == 'tex') {
     # If output is latex, then we need to convert $#...#$ to equation environment
-    mdText <- gsub('^\\$# (.*)', '\\\\begin\\{equation} \\1', mdText)
-    mdText <- gsub('^#\\$', '\\\\end\\{equation}', mdText)
+    #mdText <- gsub('^\\$# (.*)', '\\\\begin\\{equation} \\1', mdText)
+    #mdText <- gsub('^#\\$', '\\\\end\\{equation}', mdText)
 
     # We need to replace double backslashes by single backslashes because regex
     # and R eat backslashes (it's an escape character) for non-tex output.
@@ -261,9 +261,9 @@ compileRmd <- function(file = NULL, # RMarkdown file
 
     # Need to convert '$#...#$' to '(@label) $...$' notation,
     # and it needs a div class wrapped around it
-    mdText <- gsub('^\\$# \\\\label\\{eq:(.*)\\}', '(@eq\\1) ', mdText)
+    mdText <- gsub('^\\$\\$ \\\\label\\{eq:(.*)\\}', '(@eq\\1) ', mdText)
     eqLines <- grep('^\\(@eq.*\\)', mdText) # Where equations start
-    endLines <- grep('^#\\$', mdText) # Where equations end
+    endLines <- grep('^\\$\\$', mdText) # Where equations end
     # If single equation spans multiple lines, we have to melt it into one line
     # and remove the lines which the equation previously occupied (grbgLines)
     grbgLines <- vector(mode="numeric", length=0)

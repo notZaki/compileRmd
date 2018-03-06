@@ -74,9 +74,9 @@ RMarkdown also supports [pandoc's citations](http://pandoc.org/README.html#citat
 Numbered equations are possible if they are wrapped in `$#...#$`.
 A label is mandatory on the first line. Here's an example:
 ```
-$# \label{eq:yourLabel}
+$$ \label{eq:yourLabel}
 f(x) = ax^3 \cdot \sqrt{\beta x)}
-#$
+$$
 ```
 To reference the numbered equation, just type `\ref{eq:yourLabel}`.
 

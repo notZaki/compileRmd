@@ -71,8 +71,9 @@ To cite something, use `\cite{}` with the appropriate reference key in the brack
 RMarkdown also supports [pandoc's citations](http://pandoc.org/README.html#citations) which could also be used. However, this might hard-code the citations in the LaTeX document (although there are ways around this by using pandoc flags such as `--biblatex` or `--natbib`).
 
 **Equations**  
-Numbered equations are possible if they are wrapped in `$#...#$`.
-A label is mandatory on the first line. Here's an example:
+Numbered equations are possible if they are wrapped in `$$...$$`.
+Both of the `$$` should be on their own line, and a label is mandatory after the first `$$`. 
+Here's an example:
 ```
 $$ \label{eq:yourLabel}
 f(x) = ax^3 \cdot \sqrt{\beta x)}
